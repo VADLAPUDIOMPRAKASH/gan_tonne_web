@@ -1,0 +1,10 @@
+.home {
+    padding: 2rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem; /* Add gap between cards */
+    margin-top: 5rem; /* Add margin to create space between top bar and cards */
+}
