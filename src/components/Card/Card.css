@@ -16,5 +16,40 @@
 }
 
 .card h2 {
-    margin-top: 1rem;
+    margin: 16px 0;
+    color: #01050a; /* Blue color for links */
+    text-decoration: none; /* Underline text to indicate it's a link */
+  }
+  
+  .card a {
+    text-decoration: none; /* Remove default underline from link */
+    color: inherit; /* Inherit color from parent */
+  }
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 15px;
+  }
+
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-container p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-container {
+    padding: 10px;
+  }
+
+  .about-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-container p {
+    font-size: 0.8rem;
+  }
 }

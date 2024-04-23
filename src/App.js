@@ -10,6 +10,7 @@ import MandiPrices from './pages/MandiPrices/MandiPrices';
 import NoPage from './pages/NoPage/NoPage';
 import Blogs from './pages/Blogs/Blogs'
 import WeatherForecasting from './pages/WeatherForecasting/WeatherForecasting'; 
+import About from './pages/About/About';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="logistics" element={<Logistics />} />
           <Route path="mandiprices" element={<MandiPrices />} />
           <Route path="weatherforecasting" element={<WeatherForecasting />} />
+          <Route path="about" element={<About />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </Layout>

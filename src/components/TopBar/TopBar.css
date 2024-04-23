@@ -1,33 +1,93 @@
 .topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #11e78e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #11e78e;
 }
 
 .topbar h1 {
-    margin: 0;
+  margin: 0;
 }
 
-.topbar nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
-.topbar nav ul li {
-    margin-right: 1rem;
+.nav-menu ul li {
+  margin-right: 1rem;
 }
 
-.topbar nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 
 .topbar select {
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0.5rem;
-    border-radius: 4px;
+  }
+
+  .topbar h1 {
+    font-size: 1.2rem;
+  }
+
+  .nav-menu ul li {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.25rem;
+  }
+
+  .topbar h1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-menu ul {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu.open ul {
+    display: flex;
+  }
+
+  .nav-menu ul li {
+    margin-right: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
 }

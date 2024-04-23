@@ -1,13 +1,14 @@
-// Layout.js
 import React from 'react';
+import TopBar from '../../components/TopBar/TopBar';
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
   return (
     <div>
-      {/* Any layout components (e.g., header, footer) */}
-      {children}
+      <TopBar />
+      <main>{children}</main>
+      {/* Add footer or other elements if needed */}
     </div>
   );
-};
+}
 
 export default Layout;

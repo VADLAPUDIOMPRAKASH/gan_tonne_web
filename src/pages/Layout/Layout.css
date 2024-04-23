@@ -1,0 +1,32 @@
+.main-content {
+    margin-left: 170px; /* Adjust this value to leave space for the sidebar */
+    padding: 20px;
+  }
+  /* Responsive Styles */
+@media (max-width: 768px) {
+    .about-container {
+      padding: 15px;
+    }
+  
+    .about-container h1 {
+      font-size: 2rem;
+    }
+  
+    .about-container p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-container {
+      padding: 10px;
+    }
+  
+    .about-container h1 {
+      font-size: 1.8rem;
+    }
+  
+    .about-container p {
+      font-size: 0.8rem;
+    }
+  }
